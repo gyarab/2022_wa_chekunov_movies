@@ -1,0 +1,15 @@
+- model: auth.user
+  pk: 1
+  fields:
+    password: pbkdf2_sha256$390000$YnjDiSKYIGHb0EeFOWiYwS$gqKz2Zwj4qZXZvCXfIC5R08TqZx8te2JTE24sr9ftTk=
+    last_login: 2023-03-07 09:53:43.431408+00:00
+    is_superuser: true
+    username: Egor
+    first_name: ''
+    last_name: ''
+    email: cekunovegor12@gmail.com
+    is_staff: true
+    is_active: true
+    date_joined: 2023-03-07 09:53:30.053659+00:00
+    groups: []
+    user_permissions: []

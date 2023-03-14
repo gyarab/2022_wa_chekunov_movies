@@ -1,0 +1,38 @@
+- model: films.movie
+  pk: 1
+  fields:
+    name: Chalupnicek revange
+    year: 2023
+    description: hodne dobra specialitka
+- model: films.movie
+  pk: 2
+  fields:
+    name: KrystofsGame
+    year: 1000
+    description: MG dobry brachgfjaigfoia fjaffjnbdfkjgdsbgks fseg
+- model: films.movie
+  pk: 3
+  fields:
+    name: Hvezdne valky
+    year: 2000
+    description: adwaubgiskbgslkgfbedsalkfaljfdsgljhfdsg;leskjhgs;lgs
+- model: films.anime
+  pk: 1
+  fields:
+    name: AOT
+    year: 2014
+    country: JAP
+    raiting: 10
+    sfw: true
+    weebStatus: 'Yes'
+    description: Eren Yeger
+- model: films.anime
+  pk: 2
+  fields:
+    name: Tokyo Ghoul
+    year: 2014
+    country: JAP
+    raiting: 9
+    sfw: false
+    weebStatus: not really
+    description: hodne dobra specialitka
