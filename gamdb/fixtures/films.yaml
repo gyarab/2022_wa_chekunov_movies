@@ -16,6 +16,12 @@
     name: Hvezdne valky
     year: 2000
     description: adwaubgiskbgslkgfbedsalkfaljfdsgljhfdsg;leskjhgs;lgs
+- model: films.movie
+  pk: 4
+  fields:
+    name: hrusha
+    year: 200
+    description: dafageagaegag
 - model: films.anime
   pk: 1
   fields:
