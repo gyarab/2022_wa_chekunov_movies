@@ -9,6 +9,8 @@ class Movie(models.Model):
     genres = models.ManyToManyField('Genre',blank=True, null=True)
     def __str__(self):
         return f"{self.name} ({self.year})"
+    def genre_display(self):
+        return ", ".join([i.name for i in self.genres.all()])
 
 class Anime(models.Model):
     name = models.CharField(max_length=200)
@@ -24,6 +26,8 @@ class Genre(models.Model):
     name = models.CharField(max_length=200)
     def __str__(self):
         return f"{self.name}"
+    
+
 
 
 class Director(models.Model):

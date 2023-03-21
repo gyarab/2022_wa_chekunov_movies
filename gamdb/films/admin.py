@@ -6,7 +6,7 @@ from .models import Genre
 # Register your models here.
 
 class MovieAdmin(admin.ModelAdmin):
-    list_display = ['id','name','year']
+    list_display = ['id','director','name','year']
 
 
 class AnimeAdmin(admin.ModelAdmin):
