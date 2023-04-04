@@ -3,6 +3,7 @@ from .models import Movie
 from .models import Anime
 from .models import Director
 from .models import Genre
+from .templatetags import  random_numbers
 # Register your models here.
 
 class MovieAdmin(admin.ModelAdmin):
@@ -19,3 +20,4 @@ admin.site.register(Movie,MovieAdmin)
 admin.site.register(Anime, AnimeAdmin)
 admin.site.register(Director)
 admin.site.register(Genre)
+admin
