@@ -99,7 +99,7 @@
 - model: films.director
   pk: 4
   fields:
-    name: Hilip Fruï¿½ka
+    name: Hilip Fruška
     birth_year: 2005
 - model: films.director
   pk: 5
