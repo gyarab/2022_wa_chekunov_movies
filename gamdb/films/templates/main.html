@@ -27,23 +27,24 @@
 <body>
 
 <div class="container">
+    
     <h1>{{value}}</h1>
     <div class="row row-cols-3">
       {% load random_numbers %}
     {% for movie in Movie%}
     
-    <div class="card col" style="width: 18rem;">
-        <div class="card-body">
+    <div class="card col "  style="width: 18rem;height: 400px; overflow: auto;">
+        <div class="card-body ">
             <img src="https://picsum.photos/id/{% random_int 1 500 %}/600/400" class="card-img-top" alt="...">
             
           <h5 class="card-title">{{movie.name}}({{movie.year}})</h5>
           <p class="card-text">{{movie.description}}
-            
           </p>
           
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="film/?name={{movie.name}}" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+      
 
     
      {% endfor %}

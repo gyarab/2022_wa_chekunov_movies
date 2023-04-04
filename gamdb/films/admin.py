@@ -20,4 +20,4 @@ admin.site.register(Movie,MovieAdmin)
 admin.site.register(Anime, AnimeAdmin)
 admin.site.register(Director)
 admin.site.register(Genre)
-admin
+

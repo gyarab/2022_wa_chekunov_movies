@@ -16,3 +16,11 @@ def directors(request):
         'value': 'Rezišeři',
     }
     return render(request,'directors.html',context)
+
+def film(request):
+    nameReq = request.GET.get('name', '')
+    movie = Movie.objects.filter(name=nameReq)
+    context ={
+        'film': movie,
+    }
+    return render(request,'film.html',context)

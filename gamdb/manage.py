@@ -2,6 +2,8 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+
+# dulezite comandy
 # ./manage.py dumpdata --format yaml films > fixtures/films.yaml 
 
 def main():
