@@ -49,6 +49,15 @@
     director: 5
     genres:
     - 1
+- model: films.movie
+  pk: 7
+  fields:
+    name: Titanic
+    year: 1986
+    description: Dobry rodinny film, s Dikapriem!
+    director: 6
+    genres:
+    - 1
 - model: films.anime
   pk: 1
   fields:
@@ -81,6 +90,10 @@
   pk: 3
   fields:
     name: Comedy
+- model: films.genre
+  pk: 4
+  fields:
+    name: family
 - model: films.director
   pk: 1
   fields:
@@ -99,10 +112,15 @@
 - model: films.director
   pk: 4
   fields:
-    name: Hilip Fru�ka
+    name: Hilip Fruska
     birth_year: 2005
 - model: films.director
   pk: 5
   fields:
     name: Nejaky frajer
     birth_year: 1969
+- model: films.director
+  pk: 6
+  fields:
+    name: Egor Chekunov
+    birth_year: 2004
