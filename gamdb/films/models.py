@@ -36,3 +36,13 @@ class Director(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.birth_year})"
+        
+class Actor(models.Model):
+    name = models.CharField(max_length=255)
+    birth_year = models.IntegerField(blank=True, null=True)
+    slug = models.SlugField()
+    photo_url = models.CharField(max_length=255, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.name} ({self.birth_year})"

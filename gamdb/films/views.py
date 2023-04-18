@@ -1,14 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Movie
-from .models import Director
+from .models import Director, Genre, Actor
 # Create your views here.
 def homepage(request):
-    context ={
-        'Movie': Movie.objects.all(),
-        'value': 'Filmy'
+    context = {
+        # TODO use first 10 top rated
+        "movies": Movie.objects.all(),
+        "actors": Actor.objects.all(),
+        "directors": Director.objects.all(),
+        "genres": Genre.objects.all(),
     }
-    return render(request,'main.html',context)
+    return render(request, 'homepage.html', context)
 
 def directors(request):
     context ={
@@ -17,10 +20,14 @@ def directors(request):
     }
     return render(request,'directors.html',context)
 
-def film(request):
-    nameReq = request.GET.get('name', '')
-    movie = Movie.objects.filter(name=nameReq)
-    context ={
-        'film': movie,
+def film(request, id):
+    context = {
+        "movie": Movie.objects.get(id=id)
     }
-    return render(request,'film.html',context)
+    return render(request, 'film.html', context)
+
+def filmy(request):
+    context = {
+        "movies": Movie.objects.all()
+    }
+    return render(request, 'filmy.html', context)
