@@ -30,8 +30,7 @@
       </div>
     </div>
 
-    <div class="row">
-<div class="my-2">
+<div class="my-2 row">
     <p class="text-start">
         <button
             class="btn btn-secondary"
@@ -43,27 +42,34 @@
         </button>
     </p>
 
-    <div class="row collapse" id="addComment">
-        <div class="col-12 col-md-6 mx-auto">
-            <form action="" method="post">
+    <div class="card m-2" style="width: 26rem;">
+    <div class="row collapse" id="addComment" style="">
+        <div class="col-12 col-md-6">
+            <form class="form" action="" method="post">
                 {% csrf_token %}
-                {{ form.as_p }}
-                <input class="form-control btn btn-primary" type="submit" value="Odeslat" />
+                <table class="text-start">
+                {{ form.as_table }}
+                </table>
+                <input class="form-control btn btn-primary mt-5" type="submit" value="Odeslat" />
             </form>
         </div>
     </div>
-</div>
-    
+    </div>
+
+    <div class="row">
 {% for comment in comments %}
-<div class="card">
-    <strong>{{ comment.author }}</strong>, {{ comment.created_at|date:"j. n. Y H:i" }}<br />
+<div class="card m-2" style="width: 26rem;">
+    <strong>{{ comment.author }}</strong> {{ comment.created_at|date:"j. n. Y H:i" }}<br />
     {% if comment.rating %}{{ comment.rating }}%<br />{% endif %}
     {{ comment.text }}
 </div>
 {% endfor %}
 </div>
 
+
+
 {% endblock content %}
-    
+
+
     
     

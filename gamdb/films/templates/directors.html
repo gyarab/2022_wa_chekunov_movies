@@ -8,9 +8,9 @@
 <h1>Režiséři</h1>
 
 {# Tady bude seznam režisérů #}
-<div class="row row-cols-2">
+<div class="row row-cols-4">
     {% for d in directors %}
-    <div class="card">
+    <div class="card m-2">
         <div class="card-body">
             <h5 class="card-title">{{ d.name }}{% if d.birth_year %}
             &ndash; {{ d.birth_year }}

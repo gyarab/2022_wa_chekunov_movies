@@ -4,7 +4,6 @@ p {
 
 body, nav {
 background-image: url("https://wallpaperaccess.com/full/2063914.jpg");
-background-color: var(--hovno);
 background-size: cover;
 }
 
@@ -15,11 +14,17 @@ h1, a{
 color:aqua;
 }
 
-.navbar-brand, .nav-link{
-  .active{
-color:red;
+.navbar-brand:active{
+  color:red;
 
-},
+}
+
+.nav-link:active{
+
+    color:red;
+
+  }
+.navbar-brand{
 color:blue;
 }
 .blue{
@@ -49,11 +54,12 @@ color: white;
   .navtext{
     color:aqua;
   }
-  .navbar-brand, .nav-link{
-    .active{
-      color:pink;
+  .nav-link:active{
+    color:pink;
 
-    }
+  }
+
+  .navbar-brand {  
 
     color:pink;
   }
@@ -75,6 +81,11 @@ color: white;
   p {
     color: white;
   }
+table{
+  color: white;
+}
 
-
+.card {
+  background-color: red;
+}
 
