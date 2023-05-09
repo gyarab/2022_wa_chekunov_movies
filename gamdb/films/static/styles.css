@@ -1,7 +1,10 @@
-  
+:root {
+  --hovno: #FFF;
+}
+
 body, nav {
 background-image: url("https://wallpaperaccess.com/full/2063914.jpg");
-background-color: #cccccF;
+background-color: var(--hovno);
 background-size: cover;
 }
 h1, a{
@@ -10,12 +13,12 @@ h1, a{
 .navtext{
 color:aqua;
 }
+
 .navbar-brand, .nav-link{
   .active{
 color:red;
 
-}
-
+},
 color:blue;
 }
 .blue{
@@ -33,3 +36,4 @@ color: red;
 li,h2 {
 color: white;
 }
+
