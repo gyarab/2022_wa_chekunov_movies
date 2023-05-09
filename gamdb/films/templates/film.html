@@ -30,7 +30,40 @@
       </div>
     </div>
 
+    <div class="row">
+<div class="my-2">
+    <p class="text-start">
+        <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#addComment"
+        >
+            Přidat komentář
+        </button>
+    </p>
+
+    <div class="row collapse" id="addComment">
+        <div class="col-12 col-md-6 mx-auto">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input class="form-control btn btn-primary" type="submit" value="Odeslat" />
+            </form>
+        </div>
+    </div>
+</div>
+    
+{% for comment in comments %}
+<div class="card">
+    <strong>{{ comment.author }}</strong>, {{ comment.created_at|date:"j. n. Y H:i" }}<br />
+    {% if comment.rating %}{{ comment.rating }}%<br />{% endif %}
+    {{ comment.text }}
+</div>
+{% endfor %}
+</div>
+
+{% endblock content %}
     
     
     
-{% endblock%}

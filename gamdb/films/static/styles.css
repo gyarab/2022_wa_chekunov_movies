@@ -1,5 +1,5 @@
-:root {
-  --hovno: #FFF;
+p {
+  color: white;
 }
 
 body, nav {
@@ -7,6 +7,7 @@ background-image: url("https://wallpaperaccess.com/full/2063914.jpg");
 background-color: var(--hovno);
 background-size: cover;
 }
+
 h1, a{
   color:pink;
 }
@@ -36,4 +37,44 @@ color: red;
 li,h2 {
 color: white;
 }
+  
+  body, nav {
+    background-image: url("https://wallpaperaccess.com/full/2063914.jpg");
+    background-color: #cccccF;
+    background-size: cover;
+   }
+   h1, a{
+    color:pink;
+  }
+  .navtext{
+    color:aqua;
+  }
+  .navbar-brand, .nav-link{
+    .active{
+      color:pink;
+
+    }
+
+    color:pink;
+  }
+  .blue{
+    color:aqua;
+
+  }
+  
+  a:active{
+    color:blue;
+  }
+  .myAnc:hover {
+    color:pink;
+    color: red;
+  }
+  li,h2 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+
+
 

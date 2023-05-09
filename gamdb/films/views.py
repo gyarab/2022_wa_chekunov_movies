@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 from .forms import CommentForm
-from .models import Actor, Director, Genre, Movie
+from .models import Actor, Director, Genre, Movie, Comment
 
 
 # Create your views here.
@@ -33,11 +33,31 @@ def director(request, id):
 
 # Filmy
 def film(request, id):
+    m = Movie.objects.get(id=id)
+    f = CommentForm()
+
+    if request.POST:
+        f = CommentForm(request.POST)
+        if f.is_valid():
+            # ulozit do DB
+            c = Comment(
+                movie=m,
+                author=f.cleaned_data.get('author'),
+                text=f.cleaned_data.get('text'),
+                rating=f.cleaned_data.get('rating'),
+            )
+            if not c.author:
+                c.author = 'Anonym'
+            c.save()
+            # nastavit prazdny form
+            f = CommentForm()
+
     context = {
-        "movie": Movie.objects.get(id=id)
+        "movie": m,
+        "comments": Comment.objects.filter(movie=m).order_by('-created_at'),
+        "form": f
     }
     return render(request, 'film.html', context)
-
 def filmy(request):
     movies_queryset = Movie.objects.all()
     genre = request.GET.get('genre')
