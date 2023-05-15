@@ -10,26 +10,35 @@ h1, a{
 .navtext{
 color:aqua;
 }
-.navbar-brand, .nav-link{
-  .active{
-color:red;
-
+p {
+color: white;
 }
 
-color:blue;
-}
 .blue{
 color:aqua;
 
 }
-
+.nav-link, .navbar-brand{
+  color: pink;  
+}
 a:active{
 color:blue;
 }
 .myAnc:hover {
 color:pink;
-color: red;
 }
 li,h2 {
 color: white;
 }
+.card{
+  border-color:#000000;
+  background-color:#990026;
+}
+.card-title, .card-text{
+  color:white;
+}
+.btn{
+  border-color:black;
+  background-color:#1a0000;
+}
+

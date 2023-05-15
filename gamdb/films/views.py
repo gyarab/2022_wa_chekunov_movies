@@ -19,6 +19,12 @@ def directors(request):
         'value': 'Rezišeři',
     }
     return render(request,'directors.html',context)
+def director(request, id):
+    context ={
+        'Director': Director.objects.all(),
+        'value': 'Rezišeři',
+    }
+    return render(request,'directors.html',context)
 
 def film(request, id):
     context = {
@@ -26,8 +32,8 @@ def film(request, id):
     }
     return render(request, 'film.html', context)
 
-def filmy(request):
+def films(request):
     context = {
         "movies": Movie.objects.all()
     }
-    return render(request, 'filmy.html', context)
+    return render(request, 'films.html', context)
