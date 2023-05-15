@@ -19,12 +19,13 @@ from films.views import homepage
 from films.views import directors
 from films.views import director
 from films.views import film
-from films.views import films
 
+from films.views import filmy
+from films.views import director
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('director/', directors, name="directors"),
-    path('director/<int:id>', director, name="directors"),
+    path('directors/', directors, name="directors"),
+    path('director/<int:id>', director, name="director"),    
     path('film/<int:id>', film, name="movie"),
     path('film/', films, name="movie"),
     path('',homepage,name="homepage")

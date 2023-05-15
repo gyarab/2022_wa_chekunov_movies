@@ -1,19 +1,34 @@
-  
+p {
+  color: white;
+}
+
 body, nav {
 background-image: url("https://wallpaperaccess.com/full/2063914.jpg");
-background-color: #cccccF;
 background-size: cover;
 }
+
 h1, a{
   color:pink;
 }
 .navtext{
 color:aqua;
 }
+
+.navbar-brand:active{
+  color:red;
+
 p {
 color: white;
 }
 
+.nav-link:active{
+
+    color:red;
+
+  }
+.navbar-brand{
+color:blue;
+}
 .blue{
 color:aqua;
 
@@ -40,5 +55,52 @@ color: white;
 .btn{
   border-color:black;
   background-color:#1a0000;
+}
+
+
+  body, nav {
+    background-image: url("https://wallpaperaccess.com/full/2063914.jpg");
+    background-color: #cccccF;
+    background-size: cover;
+   }
+   h1, a{
+    color:pink;
+  }
+  .navtext{
+    color:aqua;
+  }
+  .nav-link:active{
+    color:pink;
+
+  }
+
+  .navbar-brand {  
+
+    color:pink;
+  }
+  .blue{
+    color:aqua;
+
+  }
+  
+  a:active{
+    color:blue;
+  }
+  .myAnc:hover {
+    color:pink;
+    color: red;
+  }
+  li,h2 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+table{
+  color: white;
+}
+
+.card {
+  background-color: red;
 }
 
