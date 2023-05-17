@@ -61,6 +61,11 @@ def film(request, id):
             if not c.author:
                 c.author = 'Anonym'
             c.save()
+            # pocitani ratingu
+            sum = 0
+            for comm in Comment.objects.filter(movie=m):
+                sum+=comm.rating
+            m.avg_rating = round(sum/len(Comment.objects.filter(movie=m)))
             # nastavit prazdny form
             f = CommentForm()
 

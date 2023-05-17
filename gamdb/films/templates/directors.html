@@ -14,7 +14,7 @@
             <div class="card-body">
               <h5 class="card-title">{{director.name}}({{director.birth_year}})</h5>
               
-              <a href="#" class="btn btn-primary">vice informaci</a>
+              <a href="{% url 'director' id=director.id %}" class="btn btn-primary">vice informaci</a>
             </div>
           </div>
          {% endfor %}
