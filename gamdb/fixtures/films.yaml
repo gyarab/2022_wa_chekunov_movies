@@ -3,7 +3,10 @@
   fields:
     name: Chalupnicek revange
     year: 2023
+    slug: null
     description: hodne dobra specialitka
+    avg_rating: null
+    image_url: null
     director: 1
     genres:
     - 2
@@ -12,7 +15,10 @@
   fields:
     name: KrystofsGame
     year: 1000
+    slug: null
     description: MG dobry brachgfjaigfoia fjaffjnbdfkjgdsbgks fseg
+    avg_rating: null
+    image_url: null
     director: null
     genres: []
 - model: films.movie
@@ -20,7 +26,10 @@
   fields:
     name: Hvezdne valky
     year: 2000
+    slug: null
     description: adwaubgiskbgslkgfbedsalkfaljfdsgljhfdsg;leskjhgs;lgs
+    avg_rating: null
+    image_url: null
     director: null
     genres: []
 - model: films.movie
@@ -28,7 +37,10 @@
   fields:
     name: hrusha
     year: 200
+    slug: null
     description: dafageagaegag
+    avg_rating: null
+    image_url: null
     director: 3
     genres: []
 - model: films.movie
@@ -36,7 +48,10 @@
   fields:
     name: KrystofsGame
     year: 1041
+    slug: null
     description: hodne dobra specialitka
+    avg_rating: null
+    image_url: null
     director: null
     genres:
     - 3
@@ -45,7 +60,10 @@
   fields:
     name: FNAF
     year: 2024
+    slug: null
     description: strasny horory
+    avg_rating: null
+    image_url: null
     director: 5
     genres:
     - 1
@@ -54,7 +72,10 @@
   fields:
     name: Titanic
     year: 1986
+    slug: null
     description: Dobry rodinny film, s Dikapriem!
+    avg_rating: null
+    image_url: null
     director: 6
     genres:
     - 1
@@ -63,7 +84,10 @@
   fields:
     name: Tokyo Ghoul
     year: 2015
+    slug: null
     description: Ghuls are there and we cant do a think abobu gagagugu lol xd
+    avg_rating: null
+    image_url: null
     director: 6
     genres:
     - 1
@@ -73,7 +97,10 @@
   fields:
     name: Milky way
     year: 2012
+    slug: milky-way
     description: Milky milky milky way i am not gay. yes pes film good
+    avg_rating: null
+    image_url: https://www.kniznivesmir.cz/wp-content/uploads/2022/09/NaZapadniFronteKlidDoraziNaNetflixUzVRijnu_banner.jpg
     director: 4
     genres:
     - 2
@@ -98,6 +125,174 @@
     sfw: false
     weebStatus: not really
     description: hodne dobra specialitka
+- model: films.comment
+  pk: 1
+  fields:
+    movie: 5
+    author: Anonym
+    text: zajimave
+    rating: 100
+    created_at: 2023-05-17 07:42:06.018461+00:00
+- model: films.comment
+  pk: 2
+  fields:
+    movie: 5
+    author: Anonym
+    text: ''
+    rating: 10
+    created_at: 2023-05-17 07:42:39.975820+00:00
+- model: films.comment
+  pk: 3
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:44:50.696686+00:00
+- model: films.comment
+  pk: 4
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:44:54.054126+00:00
+- model: films.comment
+  pk: 5
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:52:17.839928+00:00
+- model: films.comment
+  pk: 6
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:53:35.258504+00:00
+- model: films.comment
+  pk: 7
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:53:59.834502+00:00
+- model: films.comment
+  pk: 8
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:55:01.008063+00:00
+- model: films.comment
+  pk: 9
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:55:22.002636+00:00
+- model: films.comment
+  pk: 10
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:55:28.614437+00:00
+- model: films.comment
+  pk: 11
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:56:15.251362+00:00
+- model: films.comment
+  pk: 12
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:56:33.865786+00:00
+- model: films.comment
+  pk: 13
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:57:26.730399+00:00
+- model: films.comment
+  pk: 14
+  fields:
+    movie: 3
+    author: Anonym
+    text: ''
+    rating: 50
+    created_at: 2023-05-17 07:57:41.583644+00:00
+- model: films.comment
+  pk: 15
+  fields:
+    movie: 3
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:57:48.095554+00:00
+- model: films.comment
+  pk: 16
+  fields:
+    movie: 3
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:59:30.327836+00:00
+- model: films.comment
+  pk: 17
+  fields:
+    movie: 3
+    author: Anonym
+    text: ''
+    rating: 10
+    created_at: 2023-05-17 08:00:10.755646+00:00
+- model: films.comment
+  pk: 18
+  fields:
+    movie: 2
+    author: Anonym
+    text: ''
+    rating: 50
+    created_at: 2023-05-17 08:12:27.559668+00:00
+- model: films.comment
+  pk: 19
+  fields:
+    movie: 2
+    author: Anonym
+    text: ''
+    rating: 50
+    created_at: 2023-05-17 08:15:56.106411+00:00
+- model: films.comment
+  pk: 20
+  fields:
+    movie: 3
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 09:09:40.683560+00:00
+- model: films.comment
+  pk: 21
+  fields:
+    movie: 3
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 09:09:49.898213+00:00
 - model: films.genre
   pk: 1
   fields:
@@ -119,28 +314,56 @@
   fields:
     name: Tarantino
     birth_year: 1965
+    slug: ''
+    photo_url: null
 - model: films.director
   pk: 2
   fields:
     name: Pan ucitel
     birth_year: 2000
+    slug: ''
+    photo_url: null
 - model: films.director
   pk: 3
   fields:
     name: Ucitel
     birth_year: 1972
+    slug: ''
+    photo_url: null
 - model: films.director
   pk: 4
   fields:
     name: Hilip Fruska
     birth_year: 2005
+    slug: ''
+    photo_url: null
 - model: films.director
   pk: 5
   fields:
     name: Nejaky frajer
     birth_year: 1969
+    slug: ''
+    photo_url: null
 - model: films.director
   pk: 6
   fields:
     name: Egor Chekunov
     birth_year: 2004
+    slug: ''
+    photo_url: null
+- model: films.actor
+  pk: 1
+  fields:
+    name: Filip Hruska
+    birth_year: 2004
+    slug: hrusq
+    photo_url: https://php.esports.cz/images/min.php?topcut&exact&w=392&h=473&mtime=1600169092&file=https://www.tatranflorbal.cz/foto/_hraci/2018SZA/1001.jpg
+    description: florbalova legenda se vraci
+- model: films.actor
+  pk: 2
+  fields:
+    name: Rory Benes
+    birth_year: 2005
+    slug: rory
+    photo_url: null
+    description: Rory beneš
