@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 from .forms import CommentForm
-from .models import Actor, Director, Genre, Movie, Comment
+from .models import Actor, Comment, Director, Genre, Movie
 
 
 # Create your views here.
@@ -24,12 +24,6 @@ def directors(request):
         'value': 'Rezišeři',
     }
     return render(request,'directors.html',context)
-def director(request, id):
-    context ={
-        'Director': Director.objects.all(),
-        'value': 'Rezišeři',
-    }
-    return render(request,'directors.html',context)
 
 def director(request, id):
     context = {
@@ -37,6 +31,18 @@ def director(request, id):
     }
     return render(request, 'director.html', context)
 
+# Herci
+def actors(request):
+    context = {
+        "actors": Actor.objects.all()
+    }
+    return render(request, 'actors.html', context)
+
+def actor(request, id):
+    context = {
+        "actor": Actor.objects.get(id=id)
+    }
+    return render(request, 'actor.html', context)
 # Filmy
 def film(request, id):
     m = Movie.objects.get(id=id)
@@ -66,6 +72,14 @@ def film(request, id):
     return render(request, 'film.html', context)
 
 def films(request):
+    movies_queryset = Movie.objects.all()
+    genre = request.GET.get('genre')
+    if genre:
+        movies_queryset = movies_queryset.filter(genres__name=genre)
+    search = request.GET.get('search')
+    if search:
+        movies_queryset = movies_queryset.filter(Q(name__icontains=search)|Q(description__icontains=search)) 
+
     context = {
         "movies": movies_queryset,
         "genres": Genre.objects.all().order_by('name'),

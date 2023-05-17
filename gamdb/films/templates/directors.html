@@ -1,5 +1,5 @@
 {% extends 'main.html' %}
-<<<<<<< HEAD
+
     <title>Reziseri</title>
     {% load static%}
 <link rel="stylesheet" href="{% static 'styles.css' %}">
@@ -21,29 +21,4 @@
           </div>
          {% endfor %}
 {% endblock content%}
-=======
 
-{% block title %}
-    Režiséři | {{ block.super }}
-{% endblock %}
-
-{% block content %}
-<h1>Režiséři</h1>
-
-{# Tady bude seznam režisérů #}
-<div class="row row-cols-4">
-    {% for d in directors %}
-    <div class="card m-2">
-        <div class="card-body">
-            <h5 class="card-title">{{ d.name }}{% if d.birth_year %}
-            &ndash; {{ d.birth_year }}
-            {% endif %}</h5>
-            <a href="{% url 'director' d.id%}" class="btn btn-primary">Detail</a>
-
-        </div>
-    </div>
-    {% endfor %}
-  
-</div>
-{% endblock %}
->>>>>>> e977f7934b7fef2934782ded0c6e3aaf36a80e5e

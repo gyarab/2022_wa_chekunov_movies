@@ -6,17 +6,18 @@ body, nav {
 background-image: url("https://wallpaperaccess.com/full/2063914.jpg");
 background-size: cover;
 }
-
-h1, a{
-  color:pink;
-}
 .navtext{
 color:aqua;
 }
-
+.navik{
+  color: #990026;
+}
 .navbar-brand:active{
-  color:red;
-
+  color:aqua;
+}
+.navbar-brand{
+  color: beige;
+}
 p {
 color: white;
 }
@@ -27,22 +28,16 @@ color: white;
 
   }
 .navbar-brand{
-color:blue;
+color: #990026;
 }
 .blue{
 color:aqua;
+}
 
-}
-.nav-link, .navbar-brand{
-  color: pink;  
-}
-a:active{
-color:blue;
-}
 .myAnc:hover {
 color:pink;
 }
-li,h2 {
+li, h2 {
 color: white;
 }
 .card{
@@ -56,51 +51,6 @@ color: white;
   border-color:black;
   background-color:#1a0000;
 }
-
-
-  body, nav {
-    background-image: url("https://wallpaperaccess.com/full/2063914.jpg");
-    background-color: #cccccF;
-    background-size: cover;
-   }
-   h1, a{
-    color:pink;
-  }
-  .navtext{
-    color:aqua;
-  }
-  .nav-link:active{
-    color:pink;
-
-  }
-
-  .navbar-brand {  
-
-    color:pink;
-  }
-  .blue{
-    color:aqua;
-
-  }
-  
-  a:active{
-    color:blue;
-  }
-  .myAnc:hover {
-    color:pink;
-    color: red;
-  }
-  li,h2 {
-    color: white;
-  }
-  p {
-    color: white;
-  }
-table{
+h1 {
   color: white;
 }
-
-.card {
-  background-color: red;
-}
-
