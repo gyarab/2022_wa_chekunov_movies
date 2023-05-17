@@ -8,12 +8,11 @@ from .models import Actor, Comment, Director, Genre, Movie
 
 # Create your views here.
 def homepage(request):
-    context = {
+    top_filmy = Movie.objects.all().order_by('avg_rating').reverse()
+    context = { 
         # TODO use first 10 top rated
-        "movies": Movie.objects.all(),
-        "actors": Actor.objects.all(),
-        "directors": Director.objects.all(),
-        "genres": Genre.objects.all(),
+        "top_movies": top_filmy,
+        "top_3": top_filmy[0:3]
     }
     return render(request, 'homepage.html', context)
 
@@ -66,6 +65,7 @@ def film(request, id):
             for comm in Comment.objects.filter(movie=m):
                 sum+=comm.rating
             m.avg_rating = round(sum/len(Comment.objects.filter(movie=m)))
+            m.save()
             # nastavit prazdny form
             f = CommentForm()
 
@@ -83,7 +83,7 @@ def films(request):
         movies_queryset = movies_queryset.filter(genres__name=genre)
     search = request.GET.get('search')
     if search:
-        movies_queryset = movies_queryset.filter(Q(name__icontains=search)|Q(description__icontains=search)) 
+        movies_queryset = movies_queryset.filter(Q(name__icontains=search)|Q(description__icontains=search))
 
     context = {
         "movies": movies_queryset,
