@@ -8,6 +8,6 @@ class CommentForm(forms.Form):
     )
     text = forms.CharField(required=False, widget=forms.Textarea(attrs={"rows": 2,"class": "form-control", "placeholder": "Very good.."}))
     rating = forms.IntegerField(required=False, max_value=100,min_value=1,
-    widget=forms.Textarea(attrs={"class": "form-control", "placeholder": "1-100","type":"number"}),
+    widget=forms.NumberInput(attrs={"class":"form-control","type":"number"}),
         validators=[MinValueValidator(1), MaxValueValidator(100)]
     )

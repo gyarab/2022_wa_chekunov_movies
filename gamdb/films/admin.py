@@ -1,12 +1,12 @@
 from django.contrib import admin
 
-from .models import Actor, Anime, Director, Genre, Movie
+from .models import Actor, Anime, Director, Genre, Movie, Comment
 from .templatetags import random_numbers
 
 # Register your models here.
 
 class MovieAdmin(admin.ModelAdmin):
-    list_display = ['id','director','name','year']
+    list_display = ['id','director','name','avg_rating','year']
 
 
 class AnimeAdmin(admin.ModelAdmin):
@@ -20,4 +20,5 @@ admin.site.register(Anime, AnimeAdmin)
 admin.site.register(Director)
 admin.site.register(Genre)
 admin.site.register(Actor)
+admin.site.register(Comment)
 

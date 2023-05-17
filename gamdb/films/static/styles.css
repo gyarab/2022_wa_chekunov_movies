@@ -21,6 +21,10 @@ color:aqua;
 p {
 color: white;
 }
+.pp{
+  font-size: 2em;
+
+}
 
 .nav-link:active{
 
@@ -53,4 +57,5 @@ color: white;
 }
 h1 {
   color: white;
+  font-size: 2.5rem
 }

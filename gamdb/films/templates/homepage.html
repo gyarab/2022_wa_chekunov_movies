@@ -6,32 +6,47 @@
 
 {%block content%}
 
-<div class="container">
-  <div class="row">
+<div class="container-fluid">
+  <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 g-2">
     <div class="col">
-      <h2>Filmy</h2>
-        <ul>
-            {% for movie in movies %}
-                <li>{{movie.name}}</li>
+      <h1>Filmy</h2>
+        <ol>
+            {% for movie in top_movies %}
+            {% if movie.avg_rating %}
+            <li>{{movie.name}} {{movie.avg_rating}}%</li>
+            {% else %}
+            <li>{{movie.name}}</li>
+            {% endif %}
             {% endfor %}
-        </ul>
+        </ol>
     </div>
+    <div class="col"></div>
+    <h1>TOP 3</h2>
+    <div class="col"></div>
+    <div class="col"></div>
+    {% for movie in top_3 %}
     <div class="col">
-      <h2>Herci</h2>
-        <ul>
-            {% for actor in actors %}
-                <li>{{actor.name}}</li>
-            {% endfor %}
-        </ul>
-    </div>
-    <div class="col">
-      <h2>Reziseri</h2>
-        <ul>
-            {% for director in directors %}
-                <li>{{director.name}}</li>
-            {% endfor %}
-        </ul>
-    </div>
+    <div class="row"></div>    
+        <div class="card h-100">
+            <img class="card-img-top" src="{% if movie.image_url %}{{movie.image_url}}{% else %}https://place-hold.it/180x100/{% endif %}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ movie.name }}</h5>
+                {% for genre in movie.genres.all %}
+                    <span class="badge rounded-pill text-bg-primary">{{genre.name}}</span>
+                {% endfor %}
+                <p class="card-text ">{{ movie.description|truncatewords_html:"20" }}</p>
+            </div>
+            <div class="card-footer text-end">
+                <a href="{% url 'film' movie.id %}" class="btn btn-primary">Detaily</a>
+            </div>
+        </div>
+        
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+
+    {% endfor %}
+  
   </div>
 </div>
 

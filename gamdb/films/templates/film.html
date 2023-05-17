@@ -5,14 +5,14 @@
 {% endblock %}
 
 {% block content %}
-<h1>{{movie.name}}</h1>
+<h1 class="h1">{{movie.name}}</h1>
 {% if movie.avg_rating %}
 <h2>rating: {{movie.avg_rating}}%</h2>
 {% else %}
 <h2>No rating</h2>
 {% endif %}
 <img src="{% if movie.image_url %}{{movie.image_url}}{% else %}https://place-hold.it/180x100/{% endif %}" alt="Card image cap">
-<p>{{ movie.description|safe }}</p>
+<p class="pp">{{ movie.description|safe }}</p>
 
 <div class="my-2">
     <p class="text-start">
