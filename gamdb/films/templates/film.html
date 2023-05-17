@@ -1,37 +1,45 @@
-{%extends 'main.html'%}
+{% extends 'main.html' %}
 
-{% load random_numbers %}
-{% load static %}
-<link rel="stylesheet" href="{% static 'styles.css' %}">
 {% block title %}
     {{movie.name}} | {{ block.super }}
-{% endblock title %}
+{% endblock %}
 
 {% block content %}
+<h1>{{movie.name}}</h1>
+<h2>{{movie.avg_rating}}</h2>
+<img src="{% if movie.image_url %}{{movie.image_url}}{% else %}https://place-hold.it/180x100/{% endif %}" alt="Card image cap">
+<p>{{ movie.description|safe }}</p>
 
-    {% load random_numbers %}
-    
+<div class="my-2">
+    <p class="text-end">
+        <button
+            class="btn btn-secondary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#addComment"
+        >
+            Přidat komentář
+        </button>
+    </p>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <div class="container-fluid" >
-          <h1 class="text-start">{{movie.name}}</h1>
-          <h2 class="text-start">rok vydani: {{movie.year}}</h2>
-          <h2 class="text-start">Reziser: {{movie.director}}</h2>
-          <h2 class="text-start">Popis:</h2>
-          <p class="text-start">{{movie.description}}</p>
-          <h2></h2>
-      </div>
-
-      </div>
-      <div class="col">
-        <img src="https://picsum.photos/id/{% random_int 1 500 %}/600/400" class="img" alt="...">
-      </div>
-      
+    <div class="row collapse" id="addComment">
+        <div class="col-12 col-md-6 mx-auto">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input class="form-control btn btn-primary" type="submit" value="Odeslat" />
+            </form>
+        </div>
     </div>
-  </div>
+</div>
+    
+{% for comment in comments %}
+<p>
+    <strong>{{ comment.author }}</strong>, {{ comment.created_at|date:"j. n. Y H:i" }}<br />
+    {% if comment.rating %}{{ comment.rating }}%<br />{% endif %}
+    {{ comment.text }}
+</p>
+<hr />
+{% endfor %}
 
-    
-    
-{% endblock%}
+{% endblock content %}

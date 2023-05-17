@@ -5,6 +5,7 @@ import sys
 
 # dulezite comandy
 # ./manage.py dumpdata --format yaml films > fixtures/films.yaml 
+# ./manage.py loaddata fixtures/* 
 
 def main():
     """Run administrative tasks."""
