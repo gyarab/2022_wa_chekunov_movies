@@ -293,6 +293,30 @@
     text: ''
     rating: 100
     created_at: 2023-05-17 09:09:49.898213+00:00
+- model: films.comment
+  pk: 22
+  fields:
+    movie: 7
+    author: Anonym
+    text: ''
+    rating: 50
+    created_at: 2023-05-20 11:10:14.030058+00:00
+- model: films.comment
+  pk: 23
+  fields:
+    movie: 8
+    author: Anonym
+    text: very good
+    rating: 1
+    created_at: 2023-05-20 11:29:05.199521+00:00
+- model: films.comment
+  pk: 24
+  fields:
+    movie: 8
+    author: Anonym
+    text: very good
+    rating: 1
+    created_at: 2023-05-20 11:33:04.643006+00:00
 - model: films.genre
   pk: 1
   fields:
@@ -351,6 +375,13 @@
     birth_year: 2004
     slug: ''
     photo_url: null
+- model: films.director
+  pk: 7
+  fields:
+    name: Masha
+    birth_year: 1857
+    slug: masha
+    photo_url: https://i.pinimg.com/564x/83/2d/df/832ddffdd617bce18197b2855f25d32f.jpg
 - model: films.actor
   pk: 1
   fields:
@@ -366,4 +397,13 @@
     birth_year: 2005
     slug: rory
     photo_url: null
-    description: Rory bene�
+    description: Rory benes
+- model: films.actor
+  pk: 3
+  fields:
+    name: Mashusha
+    birth_year: 2006
+    slug: ukrajina
+    photo_url: https://i.pinimg.com/564x/83/2d/df/832ddffdd617bce18197b2855f25d32f.jpg
+    description: nejlepsi herecka a programatorka + gitHuberka ever forever. EZ +
+      GG GL GH GOOD GAME KYS
