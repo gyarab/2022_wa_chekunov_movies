@@ -5,7 +5,7 @@
     year: 2023
     slug: null
     description: hodne dobra specialitka
-    avg_rating: null
+    avg_rating: 100.0
     image_url: null
     director: 1
     genres:
@@ -17,7 +17,7 @@
     year: 1000
     slug: null
     description: MG dobry brachgfjaigfoia fjaffjnbdfkjgdsbgks fseg
-    avg_rating: null
+    avg_rating: 50.0
     image_url: null
     director: null
     genres: []
@@ -28,7 +28,7 @@
     year: 2000
     slug: null
     description: adwaubgiskbgslkgfbedsalkfaljfdsgljhfdsg;leskjhgs;lgs
-    avg_rating: null
+    avg_rating: 77.0
     image_url: null
     director: null
     genres: []
@@ -50,7 +50,7 @@
     year: 1041
     slug: null
     description: hodne dobra specialitka
-    avg_rating: null
+    avg_rating: 55.0
     image_url: null
     director: null
     genres:
@@ -62,7 +62,7 @@
     year: 2024
     slug: null
     description: strasny horory
-    avg_rating: null
+    avg_rating: 75.0
     image_url: null
     director: 5
     genres:
@@ -74,7 +74,7 @@
     year: 1986
     slug: null
     description: Dobry rodinny film, s Dikapriem!
-    avg_rating: null
+    avg_rating: 19.0
     image_url: null
     director: 6
     genres:
@@ -86,7 +86,7 @@
     year: 2015
     slug: null
     description: Ghuls are there and we cant do a think abobu gagagugu lol xd
-    avg_rating: null
+    avg_rating: 1.0
     image_url: null
     director: 6
     genres:
@@ -99,12 +99,122 @@
     year: 2012
     slug: milky-way
     description: Milky milky milky way i am not gay. yes pes film good
-    avg_rating: null
+    avg_rating: 50.0
     image_url: https://www.kniznivesmir.cz/wp-content/uploads/2022/09/NaZapadniFronteKlidDoraziNaNetflixUzVRijnu_banner.jpg
     director: 4
     genres:
     - 2
     - 3
+- model: films.movie
+  pk: 10
+  fields:
+    name: Planeta Země
+    year: 2006
+    slug: planeta-Zeme
+    description: Planeta Země, jak jste ji dosud nepoznali Výpravný dokumentární seriál
+      BBC Kompletní jedenáctidílná série. Autoři mnohokrát oceněného seriálu Modrá
+      planeta uvádějí sérii, která oslavuje krásu Země dosud nevídaným způsobem. Přináší
+      úplný pohled na planetu, jež je tak různorodá… Vydejte se na cestu plnou emocí
+      i poznání …
+    avg_rating: null
+    image_url: https://img.fdb.cz/obrazky/0819bc5987878e400a346c917364191d.jpg
+    director: 8
+    genres:
+    - 5
+- model: films.movie
+  pk: 11
+  fields:
+    name: Vykoupení z věznice Shawshank
+    year: 1994
+    slug: vyk
+    description: Andy Dufresne je mladý a úspěšný bankéř. Jeho život se drasticky
+      změní poté, co je odsouzen k trestu dvojnásobného doživotí za vraždu manželky
+      a jejího milence. Andy je ovšem jediný, kdo ví, že zločiny nespáchal. Andy,
+      který je v civilním životě mlčenlivý bankéř, je poslán do věznice Shawshank,
+      aby si trest krutě odpykal, a musí se naučit probít nelítostnými podmínkami
+      za zdmi vězení, kde je život často na ostří nože. Jeho tichá síla si postupně
+      získá respekt nejen spoluvězňů, zejména Reda, ale hlavně zaměstnanců vězení.
+      Ale pod rouškou zdánlivě flegmatického přijetí nespravedlivého trestu se skrývá
+      Andyho zaryté odhodlání dostat se na...
+    avg_rating: null
+    image_url: https://img.fdb.cz/obrazky/c4b955e04982a48ea48761cb03f686.jpg
+    director: 9
+    genres:
+    - 6
+- model: films.movie
+  pk: 12
+  fields:
+    name: Forrest Gump
+    year: 1994
+    slug: for
+    description: 'Robert Zemeckis patří mezi nejúspěšnější a nejzajímavější soudobé
+      hollywoodské komediografy (trilogie Návrat do budoucnosti, u nás neuvedená Falešná
+      hra s králíkem Rogerem, Smrt jí sluší). Ve svých filmech spojuje smysl pro tempo
+      a nápadité gagy s vytříbeným cítěním vizuální hodnoty filmového obrazu. Jeho
+      bohaté fantaskní příběhy, plné bravurně zvládnutých zvláštních efektů, vyprávějí
+      o nejzákladnějších lidských hodnotách: o lásce, o rodině, o hledání vlastního
+      místa v časoprostoru. Nový Zemeckisův film je brilantním shrnutím dosavadních
+      režisérových poznatků o možnostech "comicsového" vyprávění. Formálně i obsahově
+      nejméně konvenční z jeho...'
+    avg_rating: 100.0
+    image_url: https://img.fdb.cz/obrazky/8f5c19c651d212cfe10d64c84d45b.jpg
+    director: 10
+    genres:
+    - 6
+    - 7
+- model: films.movie
+  pk: 13
+  fields:
+    name: Francouzská revoluce
+    year: 1989
+    slug: fr
+    description: Dvousté výročí Velké francouzské revoluce v roce 1989 bylo pochopitelným
+      impulsem pro velkolepé oslavy a akce různých druhů, pozadu nemohli zůstat ani
+      filmaři. Natočit velkolepý historický epos bylo velkou zakázkou a ambiciózní
+      výzvou, které se chopili významný francouzský režisér Robert Enrico a jeho americký
+      kolega Richard T. Heffron, který měl nedávnou podobnou zkušenost s natáčením
+      seriálu Sever a jih. Na filmu se podílelo celkem šest společností, projekt podpořilo
+      také francouzské ministerstvo kultury a ministerstvo obrany. Díky rozsahu byl
+      film rozdělen do dvou částí (Léta naděje, Léta zběsilosti) s celkem čtyřmi díly
+      zhruba po...
+    avg_rating: null
+    image_url: https://img.fdb.cz/obrazky/55c0f3c9822d989740e7570ebc.jpg
+    director: 11
+    genres:
+    - 6
+- model: films.movie
+  pk: 14
+  fields:
+    name: Papírový dům
+    year: 2017
+    slug: pap
+    description: Osm zlodějů vezme rukojmí a zamkne se v Královské španělské tiskárně
+      cenin, hlava zločinců manipuluje s policií, aby postupovala podle jeho plánu.
+    avg_rating: 60.0
+    image_url: https://img.fdb.cz/obrazky/7276cf2a5e7796a99a4fc68d37d.jpg
+    director: 12
+    genres:
+    - 8
+    - 9
+- model: films.movie
+  pk: 15
+  fields:
+    name: Černobyl
+    year: 2019
+    slug: cer
+    description: Minisérie Černobyl rekonstruuje příběh o jaderné havárii z roku 1986
+      – jedné z nejhorších katastrof v historii způsobených člověkem – a o statečných
+      ženách a mužích, kteří se obětovali, aby zachránili Evropu před nepředstavitelnou
+      pohromou.  ČERNOBYL, pětidílná minisérie z koprodukce společností HBO a Sky,
+      rekonstruuje příběh o jaderné havárii z roku 1986, jedné z nejhorších katastrof
+      v historii způsobených člověkem, a o obětech, které byly učiněny pro záchranu
+      Evropy před nepředstavitelnou pohromou. Dne 26. dubna 1986 otřásla jadernou
+      elektrárnou v Černobylu na Ukrajině mohutná exploze, která uvolnila nebezpečné
+      radioaktivní látky nejen...
+    avg_rating: null
+    image_url: https://img.fdb.cz/obrazky/e51381a60f4cbefdfa200e88c12.jpg
+    director: 13
+    genres: []
 - model: films.anime
   pk: 1
   fields:
@@ -317,6 +427,104 @@
     text: very good
     rating: 1
     created_at: 2023-05-20 11:33:04.643006+00:00
+- model: films.comment
+  pk: 40
+  fields:
+    movie: 1
+    author: Anonym
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 12:43:58.034932+00:00
+- model: films.comment
+  pk: 41
+  fields:
+    movie: 9
+    author: Anonym
+    text: ''
+    rating: 50
+    created_at: 2023-05-17 12:44:08.264869+00:00
+- model: films.comment
+  pk: 42
+  fields:
+    movie: 6
+    author: Anonym
+    text: ''
+    rating: 75
+    created_at: 2023-05-17 12:44:16.524944+00:00
+- model: films.comment
+  pk: 43
+  fields:
+    movie: 7
+    author: Egor123456789
+    text: Awlsome! I have never seen anything better than this. Its really change
+      my perspective of veiw in the world!
+    rating: null
+    created_at: 2023-05-17 17:12:06.668342+00:00
+- model: films.comment
+  pk: 44
+  fields:
+    movie: 7
+    author: Egor123456789
+    text: Awlsome! I have never seen anything better than this. Its really change
+      my perspective of veiw in the world!
+    rating: 99
+    created_at: 2023-05-17 17:12:38.079319+00:00
+- model: films.comment
+  pk: 45
+  fields:
+    movie: 7
+    author: Anonym
+    text: ''
+    rating: null
+    created_at: 2023-05-17 17:14:33.883953+00:00
+- model: films.comment
+  pk: 46
+  fields:
+    movie: 7
+    author: Anonym
+    text: ''
+    rating: null
+    created_at: 2023-05-17 17:16:02.955583+00:00
+- model: films.comment
+  pk: 47
+  fields:
+    movie: 7
+    author: Anonym
+    text: ''
+    rating: null
+    created_at: 2023-05-17 17:17:01.683238+00:00
+- model: films.comment
+  pk: 48
+  fields:
+    movie: 7
+    author: Anonym
+    text: awdawd
+    rating: null
+    created_at: 2023-05-17 17:17:06.228753+00:00
+- model: films.comment
+  pk: 49
+  fields:
+    movie: 7
+    author: Anonym
+    text: ''
+    rating: 1
+    created_at: 2023-05-21 17:33:49.646230+00:00
+- model: films.comment
+  pk: 50
+  fields:
+    movie: 12
+    author: Evzena
+    text: miluju to!!!!
+    rating: 100
+    created_at: 2023-05-21 18:08:57.710761+00:00
+- model: films.comment
+  pk: 51
+  fields:
+    movie: 14
+    author: Anonym
+    text: ''
+    rating: 60
+    created_at: 2023-05-21 18:10:47.757297+00:00
 - model: films.genre
   pk: 1
   fields:
@@ -333,6 +541,26 @@
   pk: 4
   fields:
     name: family
+- model: films.genre
+  pk: 5
+  fields:
+    name: dokument
+- model: films.genre
+  pk: 6
+  fields:
+    name: drama
+- model: films.genre
+  pk: 7
+  fields:
+    name: romanticky
+- model: films.genre
+  pk: 8
+  fields:
+    name: krimi
+- model: films.genre
+  pk: 9
+  fields:
+    name: akcni
 - model: films.director
   pk: 1
   fields:
@@ -382,6 +610,48 @@
     birth_year: 1857
     slug: masha
     photo_url: https://i.pinimg.com/564x/83/2d/df/832ddffdd617bce18197b2855f25d32f.jpg
+- model: films.director
+  pk: 8
+  fields:
+    name: Alastair Fothergill
+    birth_year: 1960
+    slug: Alastair-Fothergill
+    photo_url: https://img.fdb.cz/galerie/a/a18beace3b4b2966d6b68a0e70a8s.jpg
+- model: films.director
+  pk: 9
+  fields:
+    name: Frank Darabont
+    birth_year: 1959
+    slug: frank
+    photo_url: https://img.fdb.cz/obrazky/c75ddc9c4eed7fbb368fc7ac7b5495.jpg
+- model: films.director
+  pk: 10
+  fields:
+    name: Robert Zemeckis
+    birth_year: 1951
+    slug: rob
+    photo_url: https://img.fdb.cz/obrazky/c592ce12e4e9c5e9ea06b7378f95e70.jpg
+- model: films.director
+  pk: 11
+  fields:
+    name: Robert Enrico
+    birth_year: 1931
+    slug: robb
+    photo_url: https://img.fdb.cz/obrazky/e618e9f8a6c6598f217f0e766122.jpg
+- model: films.director
+  pk: 12
+  fields:
+    name: Jesús Colmenar
+    birth_year: 1965
+    slug: aa
+    photo_url: https://img.fdb.cz/noimage/herec.png
+- model: films.director
+  pk: 13
+  fields:
+    name: Johan Renck
+    birth_year: 1966
+    slug: ff
+    photo_url: https://img.fdb.cz/obrazky/bd63010d8bf8f5242bb9b46ac76f32e.jpg
 - model: films.actor
   pk: 1
   fields:

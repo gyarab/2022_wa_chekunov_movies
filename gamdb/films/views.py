@@ -15,7 +15,8 @@ def homepage(request):
     for m in Movie.objects.all():
         sum = 0        
         for comm in Comment.objects.filter(movie=m):
-            sum+=comm.rating
+            if comm.rating != None:
+                sum += comm.rating
         if not len(Comment.objects.filter(movie=m)) == 0:
             m.avg_rating = round(sum/len(Comment.objects.filter(movie=m)))
             m.save()

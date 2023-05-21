@@ -8,8 +8,10 @@
 
 <div class="container-fluid">
   <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 g-2">
+    <div class="col"> <h1>Filmy</h2></div>
+      <div class="col"></div>
+      <div class="col"><h2>TOP 3</h2></div>
     <div class="col">
-      <h1>Filmy</h2>
         <ol>
             {% for movie in top_movies %}
             {% if movie.avg_rating %}
@@ -22,13 +24,11 @@
             {% endfor %}
         </ol>
     </div>
-    <div class="col"></div>
-    <h1>TOP 3</h2>
-    <div class="col"></div>
+
     <div class="col"></div>
     {% for movie in top_3 %}
     <div class="col">
-    <div class="row"></div>    
+    <div class="row"></div>
         <div class="card h-100">
             <img class="card-img-top" src="{% if movie.image_url %}{{movie.image_url}}{% else %}https://place-hold.it/180x100/{% endif %}" alt="Card image cap">
             <div class="card-body">
