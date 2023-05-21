@@ -9,6 +9,17 @@ from .models import Actor, Comment, Director, Genre, Movie
 # Create your views here.
 def homepage(request):
     top_filmy = Movie.objects.all().order_by('avg_rating').reverse()
+    
+    # raiting update 
+    
+    for m in Movie.objects.all():
+        sum = 0        
+        for comm in Comment.objects.filter(movie=m):
+            sum+=comm.rating
+        if not len(Comment.objects.filter(movie=m)) == 0:
+            m.avg_rating = round(sum/len(Comment.objects.filter(movie=m)))
+            m.save()
+    
     context = { 
         # TODO use first 10 top rated
         "top_movies": top_filmy,
