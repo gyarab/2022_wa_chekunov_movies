@@ -62,9 +62,12 @@ def film(request, id):
             c.save()
             # pocitani ratingu
             sum = 0
+            valid_raiting =0
             for comm in Comment.objects.filter(movie=m):
-                sum+=comm.rating
-            m.avg_rating = round(sum/len(Comment.objects.filter(movie=m)))
+                if comm.rating:
+                    sum+=comm.rating
+                    valid_raiting +=1
+            m.avg_rating = round(sum/valid_raiting)
             m.save()
             # nastavit prazdny form
             f = CommentForm()
